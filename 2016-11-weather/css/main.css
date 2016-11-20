@@ -1,0 +1,169 @@
+@import "fonts/fonts.css";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'open_sanscondensed_light'; 
+	background: rgba(0,0,0,.2);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-shadow: 0 2px 5px rgba(0,0,0,.8);
+	max-width: 400px;
+    height: 100vh;
+    min-height: 520px;
+    max-height: 650px;
+    margin: 2% auto 0 auto;
+    color: #fff;
+}
+
+button {
+	font-size: 20px;
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+    background: initial;
+    padding: 4px 6px;
+    border: 1px solid #fff;	
+    z-index: 2;
+    color: #fff;
+}
+
+span {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+    padding-top: 7px;
+}
+
+.celsius {
+    left: 5%;  
+}
+
+.fahrenheit {
+	right: 5%;	
+}
+
+.activButton {
+	border: 3px solid #fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,.8);
+    box-shadow: 0 3px 8px 0px rgba(0,0,0,0.8); 
+}
+
+.containerMain {
+	background: linear-gradient(#b269ab 0%,#e1bfdb 38%, #a38dc2 75%);
+	width: 100%;
+	height: 75%;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.containerIamge {
+	width: 25%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 2px solid #fff;
+}
+
+.containerIamge img {
+	display: block;
+    max-width: 100%;
+}
+
+.shadow {
+	width: 25%;
+    height: 120px;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(255, 255, 255,.3) 0%, rgba(255,255,255,.0) 100%);
+}
+
+.container4day {
+    width: 100%;
+    height: 25%; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.container1day {
+	width: 100%;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.MainTemp {
+    font-size: 90px;
+    display: block;
+    text-align: center;
+}
+
+.MainTemp:after {
+	content: "°";
+    font-size: 0.6em;
+    position: absolute;
+}
+
+.MainIcon {
+    font-size: 130px;
+    position: relative;
+    font-family: 'Weather';
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container1day:nth-child(1) {
+	background: #d9a9ce;
+}
+
+.container1day:nth-child(2) {
+	background: #d29cc7;
+}
+
+.container1day:nth-child(3) {
+	background: #c586ba;
+}
+
+.container1day:nth-child(4) {
+	background: #ba75b1;
+}
+/*.container1day > p {
+	padding-top: 2.5vh; 
+}*/
+.smallContainetTempr {
+	font-size: 24px;
+    display: block;
+    text-align: center;
+}
+
+.smallContainerIcon {
+    font-size: 55px;
+    position: relative;
+    font-family: 'Weather';
+    text-align: center;
+}
+
+.smallContainerData {
+	font-size: 24px;
+    display: block;
+    text-align: center;
+}
+
+p.smallContainetTempr:after {
+	content: "°";
+    font-size: 0.6em;
+    position: absolute;
+}
+
+
